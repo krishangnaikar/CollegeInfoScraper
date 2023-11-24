@@ -6,4 +6,4 @@ This project gets all colleges and scrapes data like links, test percentile, etc
 
 
 
-<sup><sub><sub><sub><sub>This project might get out-dated quickly</sub></sup></sub></sub></sub>
+<sup><sup><sup><sup><sup><sup><sup><sub><sub><sub><sub>This project might get out-dated quickly</sub></sup></sub></sub></sub></sub></sub></sub></sub></sub></sub>
