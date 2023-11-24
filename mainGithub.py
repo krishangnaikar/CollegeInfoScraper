@@ -5,21 +5,21 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
-import main
+import funcs
 
 urls = main.GetLinks()
 df = pd.DataFrame()
 page_links = []
 for i in range(len(urls)):
     page_links.append(urls[i])
-    href_links = main.GetPageLinks(urls[i])
+    href_links = funcs.GetPageLinks(urls[i])
     for x in range(len(href_links)):
         page_links.append(href_links[x])
 college_links = []
 for i in range(len(page_links)):
-    college_links = main.GetColleges(page_links[i])
+    college_links = funcs.GetColleges(page_links[i])
     for x in range(len(college_links)):
-        df = main.GetCollegeInfo(college_links[x], df)
+        df = funcs.GetCollegeInfo(college_links[x], df)
 
 sheet = df.values.tolist()
 
